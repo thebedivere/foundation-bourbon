@@ -1,0 +1,12 @@
+{
+    "name": "Foundation-yo",
+    "dependencies": {
+       "bourbon": "~3",
+       "font-awesome": "~4.1",
+       "foundation": "zurb/bower-foundation",
+      "jquery": "~2.1",
+      "modernizr": "~2.8",
+      "modularized-normalize-scss": "~3"
+      , "respond": "~1.4"
+  }
+}
