@@ -162,9 +162,9 @@ module.exports = function(grunt) {
       dist: {
         files: [{
           expand: true,
-          cwd: 'app/medias/images',
+          cwd: 'app/images',
           src: '{,*/}*.{gif,jpeg,jpg,png}',
-          dest: 'dist/medias/images'
+          dest: 'dist/images'
         }]
       }
     },
@@ -172,9 +172,9 @@ module.exports = function(grunt) {
       dist: {
         files: [{
           expand: true,
-          cwd: 'app/medias/images',
+          cwd: 'app/images',
           src: '{,*/}*.svg',
-          dest: 'dist/medias/images'
+          dest: 'dist/images'
         }]
       }
     },
@@ -252,8 +252,8 @@ module.exports = function(grunt) {
             src: [
               '*.{ico,png,txt}',
               '.htaccess',
-              //'medias/images/{,*/}*.{jpg,gif,ico,png,txt,webp,svg}',
-              'medias/{,*/}*.*',
+              //'images/{,*/}*.{jpg,gif,ico,png,txt,webp,svg}',
+              'images/*.*',
               '{,*/}*.html',
               'js/{,*/}*.*', // Need to load entities
               '!js/modules', // No need to copy modules
