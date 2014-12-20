@@ -140,13 +140,12 @@ module.exports = function(grunt) {
      */
     sass: {
       options: {
-        includePaths: [
+        loadPath: [
           'app/bower_components/bourbon/dist',
           'app/bower_components/font-awesome/scss',
           'app/bower_components/foundation/scss'
         ],
-        outputStyle: 'compressed', // 'nested' (default), 'expanded', 'compact', 'compressed'
-        sourceMap: true
+        style: 'compressed' // 'nested' (default), 'expanded', 'compact', 'compressed'
       },
       dist: {
         files: {
@@ -294,7 +293,7 @@ module.exports = function(grunt) {
   /**
    * SERVER TASK
    * Initializing the watch, copying styles and start compass.
-   * Lunch the local server and open the app in the browser.
+   * Launch the local server and open the app in the browser.
    */
   grunt.registerTask('server', function (target) {
 
